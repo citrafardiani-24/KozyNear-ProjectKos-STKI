@@ -1,21 +1,9 @@
----
-title: KozyNear
-colorFrom: blue
-colorTo: indigo
-sdk: docker
-app_port: 10000
-pinned: false
-license: mit
-short_description: Indonesian Kos-Kosan Search Engine Bandar Lampung
----
-
 # KozyNear &mdash; Indonesian Kos-Kosan Search Engine
 
 > Final project Mata Kuliah **Temu Kembali Informasi** (COM620321, 3 SKS) &mdash; Universitas Lampung (UNILA)
 > Search engine kos-kosan **Bandar Lampung raya** &mdash; 17 kecamatan kota + perbatasan ITERA, untuk mahasiswa 9 universitas (UNILA, ITERA, Darmajaya, UBL, UIN, Teknokrat, Polinela, Malahayati, Saburai)
 
 🌐 **Live**: deploy via [HuggingFace Spaces](https://huggingface.co/spaces) (lihat [docs/deploy_huggingface.md](docs/deploy_huggingface.md))
-📖 **Laporan**: [LAPORAN.md](LAPORAN.md)
 
 ![Status](https://img.shields.io/badge/status-deployed-green)
 ![Deadline](https://img.shields.io/badge/deadline-17%20Jun%202026-red)
@@ -193,12 +181,9 @@ TKI-KOS/
 
 ## Deploy URLs
 
-- **Live App (primary)**: https://dymazeh-kozynear.hf.space (HF Spaces 16GB, `ENABLE_NEURAL=true`: kelima model live) &mdash; lihat [docs/deploy_huggingface.md](docs/deploy_huggingface.md)
-- **Backup**: https://kozynear.onrender.com (Render free 512MB, smart/BM25/TF-IDF)
+- **Live App (primary)**: https://dymazeh-kozynear.hf.space (HF Spaces 16GB, `ENABLE_NEURAL=true`: kelima model live)
 - **API Docs**: `<base-url>/api/docs` (Swagger UI)
 - **Health**: `<base-url>/health`
-
-⚠️ Render free spin down 15 menit idle (cold start ~30-60s); HF Spaces sleep setelah 48 jam idle. Workflow [keepalive.yml](.github/workflows/keepalive.yml) ping keduanya tiap 12 menit.
 
 ## Live Results Summary (n=30 queries × 5 models, corpus real 227, index fielded)
 
