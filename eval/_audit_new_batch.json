@@ -1,0 +1,24 @@
+{
+  "input": "..\\data\\raw\\_new_batch_raw.jsonl",
+  "total_batch": 3,
+  "accepted": 0,
+  "rejected": 3,
+  "rejected_detail": [
+    {
+      "id": "mamikos-42145708",
+      "judul": "Kost Putih Tipe A Langkapura Bandar Lampung",
+      "alasan": "duplikat (sudah ada di corpus)"
+    },
+    {
+      "id": "mamikos-53680425",
+      "judul": "Kost Gyandra Residence I Tipe A Way Halim Bandar Lampung",
+      "alasan": "duplikat (sudah ada di corpus)"
+    },
+    {
+      "id": "mamikos-71224559",
+      "judul": "Kost Royal Syariah Tanjung Karang Pusat Bandar Lampung",
+      "alasan": "duplikat (sudah ada di corpus)"
+    }
+  ],
+  "accepted_ids": []
+}

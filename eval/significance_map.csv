@@ -1,0 +1,11 @@
+pair,statistic,n,p_value,p_holm,r_rank_biserial,significant_raw,significant_holm
+bm25 vs hybrid,46.00,30,0.0854,0.1708,0.462,no,no
+bm25 vs indobert,3.00,30,0.0000,0.0000,0.987,yes,yes
+bm25 vs smart,103.00,30,0.0388,0.1530,-0.455,yes,no
+bm25 vs tfidf,87.00,30,0.0246,0.1230,0.504,yes,no
+hybrid vs indobert,3.00,30,0.0000,0.0000,0.987,yes,yes
+hybrid vs smart,112.00,30,0.0382,0.1530,-0.448,yes,no
+hybrid vs tfidf,127.00,30,0.1363,0.1708,0.328,no,no
+indobert vs smart,14.00,30,0.0000,0.0000,-0.940,yes,yes
+indobert vs tfidf,10.00,30,0.0000,0.0000,-0.957,yes,yes
+smart vs tfidf,90.00,30,0.0101,0.0605,0.557,yes,no

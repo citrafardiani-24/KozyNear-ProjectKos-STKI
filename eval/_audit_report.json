@@ -1,0 +1,494 @@
+{
+  "corpus": {
+    "mamikos_real_v2.jsonl": {
+      "name": "mamikos_real_v2.jsonl",
+      "n": 240,
+      "dqs": 99.7,
+      "dim": {
+        "completeness": 99.1,
+        "validity": 99.8,
+        "consistency": 100.0,
+        "uniqueness": 100.0,
+        "timeliness": 100.0
+      },
+      "null_pct": {
+        "deskripsi": 5.4,
+        "alamat": 100.0
+      },
+      "sources": {
+        "mamikos-real-v2": 240
+      },
+      "tipe_dist": {
+        "putri": 91,
+        "putra": 28,
+        "campur": 121
+      },
+      "n_kecamatan_unique": 18,
+      "top_kecamatan": [
+        [
+          "Sukarame",
+          45
+        ],
+        [
+          "Kedaton",
+          39
+        ],
+        [
+          "Rajabasa",
+          34
+        ],
+        [
+          "Sukabumi",
+          14
+        ],
+        [
+          "Tanjung Karang Timur",
+          14
+        ]
+      ],
+      "scrape_dates": {
+        "2026-05-29": 240
+      },
+      "duplicate_ids": [],
+      "n_duplicate_ids": 0,
+      "stats": {
+        "judul_len": [
+          25,
+          45,
+          76
+        ],
+        "desc_len": [
+          11,
+          206,
+          835
+        ],
+        "fasilitas_count": [
+          2,
+          21.4,
+          51
+        ]
+      },
+      "issues": [
+        "🟡 null deskripsi: 13/240 (5.4%)",
+        "🔴 null alamat: 240/240 (100.0%)",
+        "🟡 invalid coordinat: 1 (outside Bandar Lampung bbox)",
+        "🟡 invalid jarak_kampus_km: 1"
+      ],
+      "invalid_samples": {
+        "tipe": [],
+        "coords": [
+          [
+            "mamikos-52329261",
+            [
+              -6.204343,
+              106.924713
+            ]
+          ]
+        ],
+        "price": [],
+        "jarak": [
+          [
+            "mamikos-52329261",
+            198.28
+          ]
+        ],
+        "date": []
+      }
+    },
+    "kozynear_combined.jsonl": {
+      "name": "kozynear_combined.jsonl",
+      "n": 227,
+      "dqs": 100.0,
+      "dim": {
+        "completeness": 100.0,
+        "validity": 99.8,
+        "consistency": 100.0,
+        "uniqueness": 100.0,
+        "timeliness": 100.0
+      },
+      "null_pct": {
+        "alamat": 100.0
+      },
+      "sources": {
+        "mamikos-real-v2": 227
+      },
+      "tipe_dist": {
+        "putri": 85,
+        "putra": 28,
+        "campur": 114
+      },
+      "n_kecamatan_unique": 18,
+      "top_kecamatan": [
+        [
+          "Sukarame",
+          40
+        ],
+        [
+          "Kedaton",
+          37
+        ],
+        [
+          "Rajabasa",
+          32
+        ],
+        [
+          "Tanjung Karang Timur",
+          14
+        ],
+        [
+          "Sukabumi",
+          13
+        ]
+      ],
+      "scrape_dates": {
+        "2026-05-29": 227
+      },
+      "duplicate_ids": [],
+      "n_duplicate_ids": 0,
+      "stats": {
+        "judul_len": [
+          25,
+          45,
+          76
+        ],
+        "desc_len": [
+          11,
+          206,
+          835
+        ],
+        "fasilitas_count": [
+          4,
+          22.0,
+          51
+        ]
+      },
+      "issues": [
+        "🔴 null alamat: 227/227 (100.0%)",
+        "🟡 invalid coordinat: 1 (outside Bandar Lampung bbox)",
+        "🟡 invalid jarak_kampus_km: 1"
+      ],
+      "invalid_samples": {
+        "tipe": [],
+        "coords": [
+          [
+            "mamikos-52329261",
+            [
+              -6.204343,
+              106.924713
+            ]
+          ]
+        ],
+        "price": [],
+        "jarak": [
+          [
+            "mamikos-52329261",
+            198.28
+          ]
+        ],
+        "date": []
+      }
+    }
+  },
+  "maps_readiness": {
+    "n_real": 240,
+    "koordinat_present_pct": 100.0,
+    "url_source_present_pct": 100.0,
+    "owner_name_present_pct": 95.8,
+    "kampus_terdekat_present_pct": 100.0,
+    "jarak_kampus_km_present_pct": 100.0,
+    "template_leak": 0,
+    "verified_pct": 100.0
+  },
+  "processed": {
+    "name": "corpus.json",
+    "n": 227,
+    "dqs": 90.0,
+    "dim": {
+      "completeness": 100.0,
+      "validity": 99.9,
+      "consistency": 100.0,
+      "uniqueness": 100.0,
+      "timeliness": 0.0
+    },
+    "null_pct": {
+      "alamat": 100.0,
+      "koordinat": 100.0,
+      "url_source": 100.0,
+      "scrape_date": 100.0
+    },
+    "sources": {
+      "processed": 227
+    },
+    "tipe_dist": {
+      "putri": 85,
+      "putra": 28,
+      "campur": 114
+    },
+    "n_kecamatan_unique": 18,
+    "top_kecamatan": [
+      [
+        "Sukarame",
+        40
+      ],
+      [
+        "Kedaton",
+        37
+      ],
+      [
+        "Rajabasa",
+        32
+      ],
+      [
+        "Tanjung Karang Timur",
+        14
+      ],
+      [
+        "Sukabumi",
+        13
+      ]
+    ],
+    "scrape_dates": {},
+    "duplicate_ids": [],
+    "n_duplicate_ids": 0,
+    "stats": {
+      "judul_len": [
+        25,
+        45,
+        76
+      ],
+      "desc_len": [
+        11,
+        206,
+        835
+      ],
+      "fasilitas_count": [
+        4,
+        22.0,
+        51
+      ]
+    },
+    "issues": [
+      "🔴 null alamat: 227/227 (100.0%)",
+      "🔴 null koordinat: 227/227 (100.0%)",
+      "🔴 null url_source: 227/227 (100.0%)",
+      "🔴 null scrape_date: 227/227 (100.0%)",
+      "🟡 invalid jarak_kampus_km: 1"
+    ],
+    "invalid_samples": {
+      "tipe": [],
+      "coords": [],
+      "price": [],
+      "jarak": [
+        [
+          "mamikos-52329261",
+          198.28
+        ]
+      ],
+      "date": []
+    }
+  },
+  "queries": {
+    "n": 15,
+    "ids": [
+      "q01",
+      "q02",
+      "q03",
+      "q04",
+      "q05",
+      "q06",
+      "q07",
+      "q08",
+      "q09",
+      "q10",
+      "q11",
+      "q12",
+      "q13",
+      "q14",
+      "q15"
+    ]
+  },
+  "annotations": {
+    "ground_truth.csv": {
+      "name": "ground_truth.csv",
+      "n_rows": 450,
+      "dqs": 100.0,
+      "dim": {
+        "completeness": 100.0,
+        "validity": 100.0,
+        "integrity": 100.0,
+        "uniqueness": 100.0
+      },
+      "rel_dist": {
+        "0": 240,
+        "1": 187,
+        "2": 23
+      },
+      "n_unique_queries": 15,
+      "n_unique_docs": 161,
+      "annotations_per_query": {
+        "min": 30,
+        "median": 30,
+        "max": 30
+      },
+      "issues": []
+    },
+    "annotations_annotator_A.csv": {
+      "name": "annotations_annotator_A.csv",
+      "n_rows": 450,
+      "dqs": 100.0,
+      "dim": {
+        "completeness": 100.0,
+        "validity": 100.0,
+        "integrity": 100.0,
+        "uniqueness": 100.0
+      },
+      "rel_dist": {
+        "0": 240,
+        "1": 187,
+        "2": 23
+      },
+      "n_unique_queries": 15,
+      "n_unique_docs": 161,
+      "annotations_per_query": {
+        "min": 30,
+        "median": 30,
+        "max": 30
+      },
+      "issues": []
+    },
+    "annotations_annotator_B.csv": {
+      "name": "annotations_annotator_B.csv",
+      "n_rows": 450,
+      "dqs": 100.0,
+      "dim": {
+        "completeness": 100.0,
+        "validity": 100.0,
+        "integrity": 100.0,
+        "uniqueness": 100.0
+      },
+      "rel_dist": {
+        "0": 206,
+        "1": 182,
+        "2": 62
+      },
+      "n_unique_queries": 15,
+      "n_unique_docs": 161,
+      "annotations_per_query": {
+        "min": 30,
+        "median": 30,
+        "max": 30
+      },
+      "issues": []
+    },
+    "annotations_annotator_C.csv": {
+      "name": "annotations_annotator_C.csv",
+      "n_rows": 450,
+      "dqs": 100.0,
+      "dim": {
+        "completeness": 100.0,
+        "validity": 100.0,
+        "integrity": 100.0,
+        "uniqueness": 100.0
+      },
+      "rel_dist": {
+        "0": 266,
+        "1": 172,
+        "2": 12
+      },
+      "n_unique_queries": 15,
+      "n_unique_docs": 161,
+      "annotations_per_query": {
+        "min": 30,
+        "median": 30,
+        "max": 30
+      },
+      "issues": []
+    }
+  },
+  "iaa": {
+    "n_common": 450,
+    "three_way_agreement": 0.756,
+    "pairwise_agreement": {
+      "AB": 0.838,
+      "AC": 0.918,
+      "BC": 0.756
+    },
+    "cohens_kappa": {
+      "AB": 0.721,
+      "AC": 0.843,
+      "BC": 0.572
+    }
+  },
+  "results": {
+    "n_rows": 60,
+    "models": [
+      "tfidf",
+      "bm25",
+      "indobert",
+      "hybrid"
+    ],
+    "queries_per_model": {
+      "bm25": 15,
+      "hybrid": 15,
+      "indobert": 15,
+      "tfidf": 15
+    },
+    "mean_metrics_per_model": {
+      "p_at_5": {
+        "bm25": 0.613,
+        "hybrid": 0.4,
+        "indobert": 0.107,
+        "tfidf": 0.52
+      },
+      "p_at_10": {
+        "bm25": 0.593,
+        "hybrid": 0.367,
+        "indobert": 0.113,
+        "tfidf": 0.513
+      },
+      "ap": {
+        "bm25": 0.319,
+        "hybrid": 0.203,
+        "indobert": 0.053,
+        "tfidf": 0.241
+      },
+      "ndcg_at_10": {
+        "bm25": 0.595,
+        "hybrid": 0.418,
+        "indobert": 0.115,
+        "tfidf": 0.509
+      },
+      "rr": {
+        "bm25": 0.771,
+        "hybrid": 0.755,
+        "indobert": 0.191,
+        "tfidf": 0.688
+      }
+    },
+    "nulls": {
+      "p_at_5": 0,
+      "p_at_10": 0,
+      "ap": 0,
+      "ndcg_at_10": 0,
+      "rr": 0
+    },
+    "out_of_range": {
+      "p_at_5": 0,
+      "p_at_10": 0,
+      "ap": 0,
+      "ndcg_at_10": 0,
+      "rr": 0
+    },
+    "issues": []
+  },
+  "pipeline_alignment": {
+    "corpus_n": 227,
+    "index_n": 227,
+    "seed_eligible_n": 227,
+    "corpus_eq_index": true,
+    "corpus_subset_of_seed": true,
+    "gt_docs_in_corpus": 161,
+    "gt_docs_total": 161,
+    "gt_orphans": 0
+  }
+}

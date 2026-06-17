@@ -1,0 +1,25 @@
+model,query_id,query,p_at_5,p_at_10,ap,ndcg_at_10,rr
+tfidf,q01,kos putra dekat unila ada wifi dan ac,0.2,0.1,0.020833333333333332,0.13886244387355454,0.5
+tfidf,q02,kos putri murah di gedong meneng,0.8,0.8,0.559096459096459,0.8454256604216017,1.0
+tfidf,q03,kos campur kamar mandi dalam parkir motor,1.0,0.9,0.28879629629629633,0.9266360779006401,1.0
+tfidf,q04,kos pasutri bulanan dapur bersama,0.6,0.5,0.4768518518518518,0.6587390839761452,1.0
+tfidf,q05,kos muslim dekat masjid rajabasa,1.0,0.6,0.2,0.727329844310522,1.0
+tfidf,q06,kos murah dibawah 500 ribu mahasiswa baru,0.4,0.3,0.29166666666666663,0.4808336660235955,0.3333333333333333
+tfidf,q07,kos eksklusif baru ac wifi kamar mandi dalam,0.6,0.6,0.13305555555555557,0.6114735274236563,1.0
+tfidf,q08,kos tertutup ada jam malam aturan ketat,0.0,0.0,0.0,0.0,0.0
+tfidf,q09,kos buat kerja dari rumah wifi kencang tenang,0.0,0.0,0.0,0.0,0.0
+tfidf,q10,kos dekat warung makan murah,0.0,0.0,0.0,0.0,0.0
+tfidf,q11,kos tahunan setahun bayar di muka,0.0,0.0,0.0,0.0,0.0
+tfidf,q12,kos sumantri brojonegoro depan kampus,0.8,0.9,0.23570105820105822,0.7799082337019199,0.5
+bm25,q01,kos putra dekat unila ada wifi dan ac,1.0,0.9,0.375,0.9363792118010483,1.0
+bm25,q02,kos putri murah di gedong meneng,1.0,1.0,0.7692307692307693,1.0,1.0
+bm25,q03,kos campur kamar mandi dalam parkir motor,1.0,1.0,0.3333333333333333,1.0,1.0
+bm25,q04,kos pasutri bulanan dapur bersama,0.4,0.3,0.2592592592592593,0.4540985407057151,1.0
+bm25,q05,kos muslim dekat masjid rajabasa,1.0,1.0,0.3333333333333333,1.0,1.0
+bm25,q06,kos murah dibawah 500 ribu mahasiswa baru,0.4,0.2,0.29166666666666663,0.44149241373678083,0.5
+bm25,q07,kos eksklusif baru ac wifi kamar mandi dalam,1.0,1.0,0.3333333333333333,1.0,1.0
+bm25,q08,kos tertutup ada jam malam aturan ketat,0.0,0.0,0.0,0.0,0.0
+bm25,q09,kos buat kerja dari rumah wifi kencang tenang,0.0,0.0,0.0,0.0,0.0
+bm25,q10,kos dekat warung makan murah,0.0,0.1,0.03333333333333333,0.13565197343244778,0.1
+bm25,q11,kos tahunan setahun bayar di muka,0.0,0.0,0.0,0.0,0.0
+bm25,q12,kos sumantri brojonegoro depan kampus,1.0,1.0,0.3333333333333333,1.0,1.0

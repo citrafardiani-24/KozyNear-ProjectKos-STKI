@@ -1,0 +1,9 @@
+config,map,p_at_5,delta_map
+full (semua stage ON),0.2958,0.64,0.0
+tanpa strip_html,0.2958,0.64,0.0
+tanpa normalize_whitespace,0.2958,0.64,0.0
+tanpa lowercase,0.2958,0.64,0.0
+tanpa apply_jargon_dict,0.3193,0.7,0.0235
+tanpa correct_spelling,0.2956,0.64,-0.0002
+tanpa remove_stopwords,0.2885,0.62,-0.0073
+tanpa stem,0.2969,0.6533,0.0011

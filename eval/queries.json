@@ -1,0 +1,197 @@
+{
+  "metadata": {
+    "version": "1.1.0",
+    "created": "2026-05-29",
+    "updated": "2026-06-10",
+    "scope": "Bandar Lampung — 227 real Mamikos listings (18 kecamatan, 9 universitas)",
+    "annotators": ["A-strict", "B-lenient", "C-noisy"],
+    "relevance_scale": {
+      "0": "tidak relevan",
+      "1": "sebagian relevan",
+      "2": "sangat relevan"
+    },
+    "note": "v1.1 (30 query): q01-q15 identik v1.0; q16-q30 ditambah 2026-06-10 untuk menaikkan power statistik (Wilcoxon n=15 underpowered) + coverage kampus (Darmajaya/UBL), kecamatan (Tanjung Senang/Gedong Meneng/Labuhan Ratu), fasilitas (kipas angin/tv/kasur), landmark (MBK). Setiap query diverifikasi answerable terhadap corpus real via consensus GT (lihat eval_summary). Vocabulary berbasis DESKRIPSI pemilik (BM25/IR meng-index teks deskripsi; filter kecamatan/harga/tipe dilayani metadata terpisah di /search endpoint). Tidak ada pasutri (corpus real 0 listing pasutri). Sejarah v1.0: drop 8 query synthetic-only (pasutri, jam-malam, WFH, warung-makan, bayar-dimuka, street-spesifik)."
+  },
+  "queries": [
+    {
+      "id": "q01",
+      "query": "kos putra dekat unila wifi dan ac",
+      "context": "multi-constraint (UNILA + tipe + 2 fasilitas)",
+      "expected_tipe": "putra"
+    },
+    {
+      "id": "q02",
+      "query": "kos putri murah kedaton dekat kampus",
+      "context": "tipe + location + budget",
+      "expected_tipe": "putri"
+    },
+    {
+      "id": "q03",
+      "query": "kos campur kamar mandi dalam parkir motor",
+      "context": "tipe + facility-specific",
+      "expected_tipe": "campur"
+    },
+    {
+      "id": "q04",
+      "query": "kos dekat itera sukarame kamar mandi dalam",
+      "context": "ITERA university + location + facility",
+      "expected_tipe": "any"
+    },
+    {
+      "id": "q05",
+      "query": "kos dekat teknokrat kedaton ada ac",
+      "context": "Teknokrat university + location + facility",
+      "expected_tipe": "any"
+    },
+    {
+      "id": "q06",
+      "query": "kos murah dekat polinela rajabasa mahasiswa",
+      "context": "Polinela university + location + budget",
+      "expected_tipe": "any"
+    },
+    {
+      "id": "q07",
+      "query": "kos eksklusif ac wifi kamar mandi dalam shower",
+      "context": "premium + facility-loaded",
+      "expected_tipe": "any"
+    },
+    {
+      "id": "q08",
+      "query": "kos putri aman bersih ada cctv",
+      "context": "tipe + security + quality",
+      "expected_tipe": "putri"
+    },
+    {
+      "id": "q09",
+      "query": "kos ada dapur bisa masak parkir mobil",
+      "context": "facility (dapur + parkir mobil)",
+      "expected_tipe": "any"
+    },
+    {
+      "id": "q10",
+      "query": "kos dekat transmart way halim nyaman",
+      "context": "landmark + location + quality",
+      "expected_tipe": "any"
+    },
+    {
+      "id": "q11",
+      "query": "kos putra murah rajabasa dekat unila",
+      "context": "tipe + location + budget + UNILA",
+      "expected_tipe": "putra"
+    },
+    {
+      "id": "q12",
+      "query": "kos putri dekat unila wifi murah",
+      "context": "UNILA university + tipe + facility + budget",
+      "expected_tipe": "putri"
+    },
+    {
+      "id": "q13",
+      "query": "kos dekat uin raden intan sukarame",
+      "context": "UIN university + location",
+      "expected_tipe": "any"
+    },
+    {
+      "id": "q14",
+      "query": "kos putri way halim ac wifi",
+      "context": "tipe + location + facility",
+      "expected_tipe": "putri"
+    },
+    {
+      "id": "q15",
+      "query": "kos campur nyaman strategis dekat kampus",
+      "context": "tipe + quality + use-case",
+      "expected_tipe": "campur"
+    },
+    {
+      "id": "q16",
+      "query": "kos putra ac kamar mandi dalam rajabasa",
+      "context": "tipe + 2 fasilitas + kecamatan",
+      "expected_tipe": "putra"
+    },
+    {
+      "id": "q17",
+      "query": "kos putri dekat darmajaya labuhan ratu",
+      "context": "Darmajaya (kampus baru di set) + kecamatan",
+      "expected_tipe": "putri"
+    },
+    {
+      "id": "q18",
+      "query": "kos dekat ubl wifi parkir motor",
+      "context": "UBL (kampus baru di set) + fasilitas",
+      "expected_tipe": "any"
+    },
+    {
+      "id": "q19",
+      "query": "kos campur tanjung senang murah",
+      "context": "kecamatan baru + budget",
+      "expected_tipe": "campur"
+    },
+    {
+      "id": "q20",
+      "query": "kos putri kipas angin murah sukarame",
+      "context": "fasilitas kipas + budget + kecamatan",
+      "expected_tipe": "putri"
+    },
+    {
+      "id": "q21",
+      "query": "kos putra wifi dapur bersama labuhan ratu",
+      "context": "tipe + fasilitas + kecamatan",
+      "expected_tipe": "putra"
+    },
+    {
+      "id": "q22",
+      "query": "kos dekat mall boemi kedaton ac",
+      "context": "landmark MBK + fasilitas",
+      "expected_tipe": "any"
+    },
+    {
+      "id": "q23",
+      "query": "kos putri lemari kasur way halim",
+      "context": "fasilitas furnitur + kecamatan",
+      "expected_tipe": "putri"
+    },
+    {
+      "id": "q24",
+      "query": "kos campur ac wifi murah",
+      "context": "tipe + 2 fasilitas + budget (tanpa lokasi)",
+      "expected_tipe": "campur"
+    },
+    {
+      "id": "q25",
+      "query": "kos campur tv wifi kedaton",
+      "context": "fasilitas tv + kecamatan",
+      "expected_tipe": "campur"
+    },
+    {
+      "id": "q26",
+      "query": "kos putra labuhan ratu kamar mandi dalam",
+      "context": "tipe + kecamatan + fasilitas",
+      "expected_tipe": "putra"
+    },
+    {
+      "id": "q27",
+      "query": "kos putri aman dekat itera",
+      "context": "tipe + kualitas + kampus",
+      "expected_tipe": "putri"
+    },
+    {
+      "id": "q28",
+      "query": "kos putri dekat teknokrat wifi",
+      "context": "tipe + kampus + fasilitas",
+      "expected_tipe": "putri"
+    },
+    {
+      "id": "q29",
+      "query": "kos campur parkir mobil sukarame",
+      "context": "tipe + fasilitas mobil + kecamatan",
+      "expected_tipe": "campur"
+    },
+    {
+      "id": "q30",
+      "query": "kos putri bersih nyaman dekat uin sukarame",
+      "context": "tipe + kualitas + kampus",
+      "expected_tipe": "putri"
+    }
+  ]
+}

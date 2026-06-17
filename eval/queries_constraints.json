@@ -1,0 +1,152 @@
+[
+  {
+    "id": "q01",
+    "query": "kos putra dekat unila wifi dan ac",
+    "constraints": {"gender": "putra", "fasilitas": ["wifi", "ac"], "anchor": [-5.3645, 105.2434]}
+  },
+  {
+    "id": "q02",
+    "query": "kos putri murah kedaton dekat kampus",
+    "constraints": {"gender": "putri", "harga_max": 1000000}
+  },
+  {
+    "id": "q03",
+    "query": "kos campur kamar mandi dalam parkir motor",
+    "constraints": {"gender": "campur", "fasilitas": ["mandi dalam", "parkir motor"]}
+  },
+  {
+    "id": "q04",
+    "query": "kos dekat itera sukarame kamar mandi dalam",
+    "constraints": {"fasilitas": ["mandi dalam"], "anchor": [-5.3668, 105.3149]}
+  },
+  {
+    "id": "q05",
+    "query": "kos dekat teknokrat kedaton ada ac",
+    "constraints": {"fasilitas": ["ac"], "anchor": [-5.3824, 105.2578]}
+  },
+  {
+    "id": "q06",
+    "query": "kos murah dekat polinela rajabasa mahasiswa",
+    "constraints": {"harga_max": 1000000, "anchor": [-5.3584, 105.2329]}
+  },
+  {
+    "id": "q07",
+    "query": "kos eksklusif ac wifi kamar mandi dalam shower",
+    "constraints": {"fasilitas": ["ac", "wifi", "mandi dalam"]}
+  },
+  {
+    "id": "q08",
+    "query": "kos putri aman bersih ada cctv",
+    "constraints": {"gender": "putri", "fasilitas": ["cctv"]}
+  },
+  {
+    "id": "q09",
+    "query": "kos ada dapur bisa masak parkir mobil",
+    "constraints": {"fasilitas": ["dapur", "parkir mobil"]}
+  },
+  {
+    "id": "q10",
+    "query": "kos dekat transmart way halim nyaman",
+    "constraints": {"anchor": [-5.3830, 105.2819]}
+  },
+  {
+    "id": "q11",
+    "query": "kos putra murah rajabasa dekat unila",
+    "constraints": {"gender": "putra", "harga_max": 1000000, "anchor": [-5.3645, 105.2434]}
+  },
+  {
+    "id": "q12",
+    "query": "kos putri dekat unila wifi murah",
+    "constraints": {"gender": "putri", "harga_max": 1000000, "fasilitas": ["wifi"], "anchor": [-5.3645, 105.2434]}
+  },
+  {
+    "id": "q13",
+    "query": "kos dekat uin raden intan sukarame",
+    "constraints": {"anchor": [-5.3808, 105.3038]}
+  },
+  {
+    "id": "q14",
+    "query": "kos putri way halim ac wifi",
+    "constraints": {"gender": "putri", "fasilitas": ["ac", "wifi"]}
+  },
+  {
+    "id": "q15",
+    "query": "kos campur nyaman strategis dekat kampus",
+    "constraints": {"gender": "campur"}
+  },
+  {
+    "id": "q16",
+    "query": "kos putra ac kamar mandi dalam rajabasa",
+    "constraints": {"gender": "putra", "fasilitas": ["ac", "mandi dalam"]}
+  },
+  {
+    "id": "q17",
+    "query": "kos putri dekat darmajaya labuhan ratu",
+    "constraints": {"gender": "putri", "anchor": [-5.3772, 105.2498]}
+  },
+  {
+    "id": "q18",
+    "query": "kos dekat ubl wifi parkir motor",
+    "constraints": {"fasilitas": ["wifi", "parkir motor"], "anchor": [-5.3796, 105.2518]}
+  },
+  {
+    "id": "q19",
+    "query": "kos campur tanjung senang murah",
+    "constraints": {"gender": "campur", "harga_max": 1000000}
+  },
+  {
+    "id": "q20",
+    "query": "kos putri kipas angin murah sukarame",
+    "constraints": {"gender": "putri", "harga_max": 1000000, "fasilitas": ["kipas"]}
+  },
+  {
+    "id": "q21",
+    "query": "kos putra wifi dapur bersama labuhan ratu",
+    "constraints": {"gender": "putra", "fasilitas": ["wifi", "dapur"]}
+  },
+  {
+    "id": "q22",
+    "query": "kos dekat mall boemi kedaton ac",
+    "constraints": {"fasilitas": ["ac"], "anchor": [-5.3821, 105.2596]}
+  },
+  {
+    "id": "q23",
+    "query": "kos putri lemari kasur way halim",
+    "constraints": {"gender": "putri", "fasilitas": ["kasur", "lemari"]}
+  },
+  {
+    "id": "q24",
+    "query": "kos campur ac wifi murah",
+    "constraints": {"gender": "campur", "harga_max": 1000000, "fasilitas": ["ac", "wifi"]}
+  },
+  {
+    "id": "q25",
+    "query": "kos campur tv wifi kedaton",
+    "constraints": {"gender": "campur", "fasilitas": ["tv", "wifi"]}
+  },
+  {
+    "id": "q26",
+    "query": "kos putra labuhan ratu kamar mandi dalam",
+    "constraints": {"gender": "putra", "fasilitas": ["mandi dalam"]}
+  },
+  {
+    "id": "q27",
+    "query": "kos putri aman dekat itera",
+    "constraints": {"gender": "putri", "anchor": [-5.3668, 105.3149]}
+  },
+  {
+    "id": "q28",
+    "query": "kos putri dekat teknokrat wifi",
+    "constraints": {"gender": "putri", "fasilitas": ["wifi"], "anchor": [-5.3824, 105.2578]}
+  },
+  {
+    "id": "q29",
+    "query": "kos campur parkir mobil sukarame",
+    "constraints": {"gender": "campur", "fasilitas": ["parkir mobil"]}
+  },
+  {
+    "id": "q30",
+    "query": "kos putri bersih nyaman dekat uin sukarame",
+    "constraints": {"gender": "putri", "anchor": [-5.3808, 105.3038]}
+  }
+]

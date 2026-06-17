@@ -1,0 +1,151 @@
+model,query_id,query,p_at_5,p_at_10,ap,ndcg_at_10,rr
+tfidf,q01,kos putra dekat unila wifi dan ac,0.4,0.3,0.475974765974766,0.3413841287904726,1.0
+bm25,q01,kos putra dekat unila wifi dan ac,0.6,0.5,0.6634407989671146,0.6081279732694123,1.0
+indobert,q01,kos putra dekat unila wifi dan ac,0.4,0.2,0.32991827013566144,0.15381310599606834,0.5
+hybrid,q01,kos putra dekat unila wifi dan ac,0.8,0.5,0.6607622275385433,0.5957941060094945,1.0
+tfidf,q02,kos putri murah kedaton dekat kampus,0.4,0.7,0.6762130271287037,0.5647103173639932,1.0
+bm25,q02,kos putri murah kedaton dekat kampus,0.6,0.7,0.7722459560148177,0.6499653463859528,1.0
+indobert,q02,kos putri murah kedaton dekat kampus,0.6,0.7,0.7865747615324563,0.6074643011758164,1.0
+hybrid,q02,kos putri murah kedaton dekat kampus,0.8,0.7,0.7842480221276479,0.6558549441570832,1.0
+tfidf,q03,kos campur kamar mandi dalam parkir motor,0.6,0.5,0.6254947454792658,0.5919268187287083,1.0
+bm25,q03,kos campur kamar mandi dalam parkir motor,0.8,0.9,0.7762003448222801,0.8899541168509599,1.0
+indobert,q03,kos campur kamar mandi dalam parkir motor,0.4,0.6,0.5958635675453581,0.6405914129030109,1.0
+hybrid,q03,kos campur kamar mandi dalam parkir motor,0.8,0.8,0.7603686011731987,0.8205228949141826,1.0
+tfidf,q04,kos dekat itera sukarame kamar mandi dalam,1.0,0.8,0.849919866039376,0.857980942822373,1.0
+bm25,q04,kos dekat itera sukarame kamar mandi dalam,1.0,1.0,0.9400613602972949,1.0,1.0
+indobert,q04,kos dekat itera sukarame kamar mandi dalam,1.0,0.8,0.7651818000561361,0.8482378089219645,1.0
+hybrid,q04,kos dekat itera sukarame kamar mandi dalam,1.0,1.0,0.941244874638704,1.0,1.0
+tfidf,q05,kos dekat teknokrat kedaton ada ac,1.0,0.7,0.7998234001915943,0.800693766409882,1.0
+bm25,q05,kos dekat teknokrat kedaton ada ac,0.4,0.4,0.6380605129744905,0.48882922182497546,1.0
+indobert,q05,kos dekat teknokrat kedaton ada ac,1.0,1.0,0.8980143666719755,1.0,1.0
+hybrid,q05,kos dekat teknokrat kedaton ada ac,0.4,0.4,0.6413753734014198,0.4920062203073637,1.0
+tfidf,q06,kos murah dekat polinela rajabasa mahasiswa,1.0,1.0,0.9687637259805871,0.9484535814404208,1.0
+bm25,q06,kos murah dekat polinela rajabasa mahasiswa,0.8,0.8,0.8318876965206945,0.6302793174964971,0.5
+indobert,q06,kos murah dekat polinela rajabasa mahasiswa,0.8,0.7,0.7952382587255823,0.5767892036558794,1.0
+hybrid,q06,kos murah dekat polinela rajabasa mahasiswa,0.8,0.8,0.8193463197292551,0.6337063743783896,0.5
+tfidf,q07,kos eksklusif ac wifi kamar mandi dalam shower,0.8,0.9,0.9021262584026478,0.9052116356304493,1.0
+bm25,q07,kos eksklusif ac wifi kamar mandi dalam shower,0.8,0.8,0.8812686909382813,0.8263333286520083,1.0
+indobert,q07,kos eksklusif ac wifi kamar mandi dalam shower,0.8,0.8,0.852712768192242,0.7948833326720564,1.0
+hybrid,q07,kos eksklusif ac wifi kamar mandi dalam shower,0.8,0.8,0.882630357725216,0.8415908474314976,1.0
+tfidf,q08,kos putri aman bersih ada cctv,0.6,0.7,0.7524194164735735,0.7564477297898766,1.0
+bm25,q08,kos putri aman bersih ada cctv,0.8,0.8,0.7701144337665626,0.8415908474314976,1.0
+indobert,q08,kos putri aman bersih ada cctv,1.0,0.7,0.7725340963384442,0.7909506325094737,1.0
+hybrid,q08,kos putri aman bersih ada cctv,0.8,0.8,0.7670721057242346,0.8415908474314976,1.0
+tfidf,q09,kos ada dapur bisa masak parkir mobil,0.8,0.9,0.9059279969968829,0.8611375561264454,1.0
+bm25,q09,kos ada dapur bisa masak parkir mobil,0.8,0.9,0.8868934512910757,0.8611375561264454,1.0
+indobert,q09,kos ada dapur bisa masak parkir mobil,1.0,0.9,0.927085778221848,0.9216017310213247,1.0
+hybrid,q09,kos ada dapur bisa masak parkir mobil,0.8,0.9,0.8911876689781506,0.8611375561264454,1.0
+tfidf,q10,kos dekat transmart way halim nyaman,0.6,0.3,0.7560606060606061,0.7227265726449519,1.0
+bm25,q10,kos dekat transmart way halim nyaman,0.6,0.4,0.6602564102564102,0.7618017901203944,1.0
+indobert,q10,kos dekat transmart way halim nyaman,0.2,0.2,0.3809947299077734,0.44615333764087994,1.0
+hybrid,q10,kos dekat transmart way halim nyaman,0.6,0.4,0.6491452991452991,0.7569060528760422,1.0
+tfidf,q11,kos putra murah rajabasa dekat unila,0.2,0.3,0.33283130998688276,0.24527053644780739,0.2
+bm25,q11,kos putra murah rajabasa dekat unila,0.4,0.3,0.47624686716791975,0.4537539097947904,1.0
+indobert,q11,kos putra murah rajabasa dekat unila,0.4,0.3,0.3553375173884919,0.31458154826843054,0.3333333333333333
+hybrid,q11,kos putra murah rajabasa dekat unila,0.4,0.3,0.47191786283891546,0.4537539097947904,1.0
+tfidf,q12,kos putri dekat unila wifi murah,0.8,0.9,0.8998441489318898,0.6732065550927088,1.0
+bm25,q12,kos putri dekat unila wifi murah,1.0,1.0,0.9584580198427087,0.7935501144239986,1.0
+indobert,q12,kos putri dekat unila wifi murah,0.4,0.5,0.6556847168965083,0.37650335261124734,1.0
+hybrid,q12,kos putri dekat unila wifi murah,1.0,0.9,0.9318412657878888,0.7401356323924945,1.0
+tfidf,q13,kos dekat uin raden intan sukarame,1.0,0.8,0.844275383267311,0.8521705090845474,1.0
+bm25,q13,kos dekat uin raden intan sukarame,1.0,1.0,0.9153188366550438,1.0,1.0
+indobert,q13,kos dekat uin raden intan sukarame,0.8,0.7,0.7509456841216557,0.7631925784528223,1.0
+hybrid,q13,kos dekat uin raden intan sukarame,1.0,1.0,0.917281716318458,1.0,1.0
+tfidf,q14,kos putri way halim ac wifi,0.4,0.3,0.3902650740619256,0.1845588015136597,0.25
+bm25,q14,kos putri way halim ac wifi,0.2,0.3,0.4018419311881002,0.20260564541517145,0.3333333333333333
+indobert,q14,kos putri way halim ac wifi,0.0,0.4,0.49081842368184486,0.20888399500361943,0.16666666666666666
+hybrid,q14,kos putri way halim ac wifi,0.2,0.3,0.40664792766076335,0.20260564541517145,0.3333333333333333
+tfidf,q15,kos campur nyaman strategis dekat kampus,0.8,0.4,0.615383467107605,0.5637884576902256,1.0
+bm25,q15,kos campur nyaman strategis dekat kampus,0.8,0.5,0.6072071846282372,0.6051399156371955,1.0
+indobert,q15,kos campur nyaman strategis dekat kampus,0.2,0.3,0.2975191939123828,0.23758350840568812,0.25
+hybrid,q15,kos campur nyaman strategis dekat kampus,0.8,0.5,0.6055772005772007,0.6025064803817581,1.0
+tfidf,q16,kos putra ac kamar mandi dalam rajabasa,0.4,0.5,0.5254776374487417,0.5088895177592417,1.0
+bm25,q16,kos putra ac kamar mandi dalam rajabasa,0.6,0.6,0.572017797017797,0.6463570560087792,1.0
+indobert,q16,kos putra ac kamar mandi dalam rajabasa,0.4,0.3,0.34501502470851125,0.3574777483144188,0.5
+hybrid,q16,kos putra ac kamar mandi dalam rajabasa,0.4,0.5,0.5323750967229227,0.5992065908568516,1.0
+tfidf,q17,kos putri dekat darmajaya labuhan ratu,0.8,0.8,0.8054946385650353,0.8605074844314726,1.0
+bm25,q17,kos putri dekat darmajaya labuhan ratu,0.8,0.8,0.7475981228265854,0.8133130799027283,1.0
+indobert,q17,kos putri dekat darmajaya labuhan ratu,0.8,0.9,0.8661712777175523,0.6227904435286231,1.0
+hybrid,q17,kos putri dekat darmajaya labuhan ratu,0.8,0.8,0.7813839813710834,0.831118055957348,1.0
+tfidf,q18,kos dekat ubl wifi parkir motor,0.6,0.6,0.7689030787595004,0.6434035614033737,1.0
+bm25,q18,kos dekat ubl wifi parkir motor,0.6,0.6,0.7897058870623088,0.675416025555764,1.0
+indobert,q18,kos dekat ubl wifi parkir motor,1.0,1.0,0.9781658029818566,1.0,1.0
+hybrid,q18,kos dekat ubl wifi parkir motor,0.6,0.6,0.7897058870623088,0.675416025555764,1.0
+tfidf,q19,kos campur tanjung senang murah,0.8,0.8,0.7797932352769218,0.8534829578999933,1.0
+bm25,q19,kos campur tanjung senang murah,0.8,0.8,0.7445216710217573,0.820999655261457,1.0
+indobert,q19,kos campur tanjung senang murah,0.6,0.5,0.7224957861207658,0.43074739286865216,1.0
+hybrid,q19,kos campur tanjung senang murah,0.8,0.8,0.7362417339145045,0.820999655261457,1.0
+tfidf,q20,kos putri kipas angin murah sukarame,0.8,0.7,0.7779903766356395,0.7354776644450403,1.0
+bm25,q20,kos putri kipas angin murah sukarame,1.0,0.8,0.8457216594177869,0.7922673501371923,1.0
+indobert,q20,kos putri kipas angin murah sukarame,0.6,0.7,0.7094545266080006,0.5066012760960746,0.5
+hybrid,q20,kos putri kipas angin murah sukarame,1.0,0.8,0.822727286229915,0.777788556164261,1.0
+tfidf,q21,kos putra wifi dapur bersama labuhan ratu,0.0,0.0,0.15759902335989293,0.0,0.07142857142857142
+bm25,q21,kos putra wifi dapur bersama labuhan ratu,0.0,0.0,0.15902271142151203,0.0,0.09090909090909091
+indobert,q21,kos putra wifi dapur bersama labuhan ratu,0.4,0.4,0.4137085137085137,0.5213598437607438,0.5
+hybrid,q21,kos putra wifi dapur bersama labuhan ratu,0.0,0.0,0.16624682788475892,0.0,0.09090909090909091
+tfidf,q22,kos dekat mall boemi kedaton ac,0.6,0.6,0.5333533177062588,0.4892835987503298,0.3333333333333333
+bm25,q22,kos dekat mall boemi kedaton ac,0.6,0.6,0.526014773022622,0.4892835987503298,0.3333333333333333
+indobert,q22,kos dekat mall boemi kedaton ac,0.8,0.7,0.7089758798785168,0.7381919257729245,1.0
+hybrid,q22,kos dekat mall boemi kedaton ac,0.6,0.6,0.5350276312381576,0.4892835987503298,0.3333333333333333
+tfidf,q23,kos putri lemari kasur way halim,0.6,0.4,0.4665679337603833,0.43200651480036767,0.5
+bm25,q23,kos putri lemari kasur way halim,0.4,0.4,0.5026219433023534,0.5517258289478331,1.0
+indobert,q23,kos putri lemari kasur way halim,0.6,0.7,0.6213287500830493,0.49211964640814687,0.5
+hybrid,q23,kos putri lemari kasur way halim,0.4,0.4,0.5113176437218286,0.5517258289478331,1.0
+tfidf,q24,kos campur ac wifi murah,1.0,0.7,0.7659615733973163,0.800693766409882,1.0
+bm25,q24,kos campur ac wifi murah,0.6,0.7,0.6245743683321825,0.6848374495230163,1.0
+indobert,q24,kos campur ac wifi murah,0.8,0.5,0.6563003765781543,0.6051399156371955,1.0
+hybrid,q24,kos campur ac wifi murah,0.6,0.7,0.6287249156592774,0.681660451040628,1.0
+tfidf,q25,kos campur tv wifi kedaton,1.0,0.7,0.7312950233164817,0.7491551605471735,1.0
+bm25,q25,kos campur tv wifi kedaton,0.8,0.6,0.6591053571175276,0.6418218766868755,1.0
+indobert,q25,kos campur tv wifi kedaton,0.8,0.6,0.6192496209394551,0.5684579545875155,0.5
+hybrid,q25,kos campur tv wifi kedaton,0.6,0.6,0.6408954117777648,0.6288887434460071,1.0
+tfidf,q26,kos putra labuhan ratu kamar mandi dalam,0.0,0.0,0.22784545393584293,0.0,0.08333333333333333
+bm25,q26,kos putra labuhan ratu kamar mandi dalam,0.0,0.0,0.2342677405432406,0.0,0.07692307692307693
+indobert,q26,kos putra labuhan ratu kamar mandi dalam,0.2,0.3,0.38791797588600657,0.36288691033421744,1.0
+hybrid,q26,kos putra labuhan ratu kamar mandi dalam,0.0,0.0,0.2361402932778623,0.0,0.07142857142857142
+tfidf,q27,kos putri aman dekat itera,0.2,0.4,0.406737939721448,0.3529461582433962,0.5
+bm25,q27,kos putri aman dekat itera,0.6,0.5,0.5124300736744515,0.5483327772244702,1.0
+indobert,q27,kos putri aman dekat itera,0.4,0.3,0.43395318887605633,0.29727159644205703,0.5
+hybrid,q27,kos putri aman dekat itera,0.6,0.5,0.4987971332512297,0.5483327772244702,1.0
+tfidf,q28,kos putri dekat teknokrat wifi,1.0,0.7,0.7586554079133917,0.7909506325094737,1.0
+bm25,q28,kos putri dekat teknokrat wifi,0.4,0.5,0.6338497593111351,0.5801476231864474,1.0
+indobert,q28,kos putri dekat teknokrat wifi,0.4,0.7,0.6886311206900966,0.6659485553357843,1.0
+hybrid,q28,kos putri dekat teknokrat wifi,0.6,0.6,0.6456867551817445,0.6581810421830975,1.0
+tfidf,q29,kos campur parkir mobil sukarame,0.8,0.5,0.6012179758993852,0.38537832701157376,0.5
+bm25,q29,kos campur parkir mobil sukarame,0.6,0.5,0.5895716552904686,0.4595326231006953,1.0
+indobert,q29,kos campur parkir mobil sukarame,0.4,0.5,0.5443343328211749,0.35305023969677163,0.3333333333333333
+hybrid,q29,kos campur parkir mobil sukarame,0.4,0.5,0.5598848052323329,0.4105719800676481,1.0
+tfidf,q30,kos putri bersih nyaman dekat uin sukarame,0.8,0.6,0.5790133959566733,0.6399441431116327,1.0
+bm25,q30,kos putri bersih nyaman dekat uin sukarame,0.8,0.6,0.6773570060207993,0.7065836017263629,1.0
+indobert,q30,kos putri bersih nyaman dekat uin sukarame,0.2,0.5,0.4529500261643119,0.3601444733944158,0.3333333333333333
+hybrid,q30,kos putri bersih nyaman dekat uin sukarame,0.6,0.6,0.6295940546864192,0.6652907408280685,1.0
+smart,q01,kos putra dekat unila wifi dan ac,1.0,0.7,0.9583333333333334,0.8874535425097859,1.0
+smart,q02,kos putri murah kedaton dekat kampus,1.0,1.0,0.9656153370439085,0.9100342589944143,1.0
+smart,q03,kos campur kamar mandi dalam parkir motor,1.0,1.0,1.0,1.0,1.0
+smart,q04,kos dekat itera sukarame kamar mandi dalam,0.8,0.9,0.8635740328435427,0.9052116356304493,1.0
+smart,q05,kos dekat teknokrat kedaton ada ac,0.8,0.7,0.6969354261708084,0.7241528458281337,1.0
+smart,q06,kos murah dekat polinela rajabasa mahasiswa,1.0,0.9,0.9172396271987123,0.8817789922971222,1.0
+smart,q07,kos eksklusif ac wifi kamar mandi dalam shower,1.0,1.0,0.9857894072358955,1.0,1.0
+smart,q08,kos putri aman bersih ada cctv,1.0,1.0,0.9814814814814815,1.0,1.0
+smart,q09,kos ada dapur bisa masak parkir mobil,1.0,0.9,0.9459547731882555,0.933745776545611,1.0
+smart,q10,kos dekat transmart way halim nyaman,0.6,0.3,0.5815384615384616,0.639945385422766,1.0
+smart,q11,kos putra murah rajabasa dekat unila,1.0,0.8,0.8817118553960659,0.8786245713533357,1.0
+smart,q12,kos putri dekat unila wifi murah,1.0,1.0,0.989855072463768,0.782675957907822,1.0
+smart,q13,kos dekat uin raden intan sukarame,1.0,1.0,0.9447364630719643,1.0,1.0
+smart,q14,kos putri way halim ac wifi,1.0,1.0,0.8347367268746579,0.8958325865764261,1.0
+smart,q15,kos campur nyaman strategis dekat kampus,1.0,0.9,0.9909090909090909,0.9363792118010483,1.0
+smart,q16,kos putra ac kamar mandi dalam rajabasa,1.0,0.9,1.0,0.9627103649796489,1.0
+smart,q17,kos putri dekat darmajaya labuhan ratu,1.0,1.0,0.9526460002322072,0.8894500800923202,1.0
+smart,q18,kos dekat ubl wifi parkir motor,1.0,1.0,0.9469754896992089,1.0,1.0
+smart,q19,kos campur tanjung senang murah,1.0,0.9,0.8565388617844532,0.8591855593017523,1.0
+smart,q20,kos putri kipas angin murah sukarame,1.0,1.0,0.9915824915824915,0.9681896059005243,1.0
+smart,q21,kos putra wifi dapur bersama labuhan ratu,0.6,0.3,0.616805990943922,0.6412691247651683,1.0
+smart,q22,kos dekat mall boemi kedaton ac,0.8,0.7,0.673993084746708,0.7503359712972109,1.0
+smart,q23,kos putri lemari kasur way halim,1.0,1.0,1.0,1.0,1.0
+smart,q24,kos campur ac wifi murah,0.6,0.7,0.6851113622025098,0.7564477297898766,1.0
+smart,q25,kos campur tv wifi kedaton,1.0,1.0,0.9745098039215686,1.0,1.0
+smart,q26,kos putra labuhan ratu kamar mandi dalam,1.0,0.5,0.6629163250542561,0.6489315753318465,1.0
+smart,q27,kos putri aman dekat itera,1.0,1.0,1.0,1.0,1.0
+smart,q28,kos putri dekat teknokrat wifi,1.0,1.0,0.9090634221020532,1.0,1.0
+smart,q29,kos campur parkir mobil sukarame,1.0,1.0,0.9732142857142857,1.0,1.0
+smart,q30,kos putri bersih nyaman dekat uin sukarame,1.0,1.0,1.0,1.0,1.0

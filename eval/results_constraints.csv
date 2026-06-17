@@ -1,0 +1,31 @@
+query_id,query,cs_at_5_smart,cs_at_5_bm25,cs_at_5_tfidf,cs_at_5_indobert,cs_at_5_hybrid
+q01,kos putra dekat unila wifi dan ac,0.4000,0.2000,0.2000,0.0000,0.2000
+q02,kos putri murah kedaton dekat kampus,1.0000,0.6000,0.4000,0.4000,0.8000
+q03,kos campur kamar mandi dalam parkir motor,1.0000,0.4000,0.6000,0.4000,0.6000
+q04,kos dekat itera sukarame kamar mandi dalam,1.0000,0.6000,0.6000,0.2000,0.4000
+q05,kos dekat teknokrat kedaton ada ac,1.0000,0.2000,0.8000,0.2000,0.2000
+q06,kos murah dekat polinela rajabasa mahasiswa,1.0000,1.0000,1.0000,0.8000,1.0000
+q07,kos eksklusif ac wifi kamar mandi dalam shower,1.0000,0.8000,0.8000,0.4000,0.8000
+q08,kos putri aman bersih ada cctv,0.6000,0.4000,0.2000,0.4000,0.4000
+q09,kos ada dapur bisa masak parkir mobil,1.0000,0.8000,0.8000,0.8000,0.8000
+q10,kos dekat transmart way halim nyaman,1.0000,1.0000,1.0000,0.6000,1.0000
+q11,kos putra murah rajabasa dekat unila,1.0000,0.2000,0.0000,0.0000,0.4000
+q12,kos putri dekat unila wifi murah,1.0000,0.8000,0.6000,0.0000,0.6000
+q13,kos dekat uin raden intan sukarame,1.0000,1.0000,1.0000,0.2000,1.0000
+q14,kos putri way halim ac wifi,0.2000,0.0000,0.0000,0.0000,0.0000
+q15,kos campur nyaman strategis dekat kampus,1.0000,0.8000,0.8000,0.0000,0.6000
+q16,kos putra ac kamar mandi dalam rajabasa,0.4000,0.2000,0.4000,0.0000,0.2000
+q17,kos putri dekat darmajaya labuhan ratu,1.0000,0.8000,0.8000,0.2000,0.8000
+q18,kos dekat ubl wifi parkir motor,1.0000,0.6000,0.6000,0.4000,0.6000
+q19,kos campur tanjung senang murah,1.0000,0.6000,0.6000,0.4000,0.6000
+q20,kos putri kipas angin murah sukarame,1.0000,1.0000,0.8000,0.0000,1.0000
+q21,kos putra wifi dapur bersama labuhan ratu,0.0000,0.0000,0.0000,0.0000,0.0000
+q22,kos dekat mall boemi kedaton ac,1.0000,0.6000,0.8000,0.2000,0.6000
+q23,kos putri lemari kasur way halim,1.0000,0.4000,0.6000,0.2000,0.4000
+q24,kos campur ac wifi murah,1.0000,0.0000,0.0000,0.0000,0.0000
+q25,kos campur tv wifi kedaton,0.4000,0.8000,0.4000,0.4000,0.6000
+q26,kos putra labuhan ratu kamar mandi dalam,1.0000,0.0000,0.0000,0.4000,0.0000
+q27,kos putri aman dekat itera,1.0000,0.4000,0.2000,0.0000,0.4000
+q28,kos putri dekat teknokrat wifi,1.0000,0.2000,0.4000,0.0000,0.2000
+q29,kos campur parkir mobil sukarame,1.0000,0.6000,0.6000,0.4000,0.4000
+q30,kos putri bersih nyaman dekat uin sukarame,1.0000,0.8000,0.8000,0.0000,0.8000

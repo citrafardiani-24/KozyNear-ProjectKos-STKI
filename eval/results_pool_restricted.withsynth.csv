@@ -1,0 +1,73 @@
+model,query_id,query,p_at_5,p_at_10,ap,ndcg_at_10,rr
+tfidf,q01,kos putra dekat unila ada wifi dan ac,0.8,0.9,0.8666815203648592,0.7799082337019199,0.5
+bm25,q01,kos putra dekat unila ada wifi dan ac,1.0,0.9,0.9208220227196471,0.9216017310213247,1.0
+indobert,q01,kos putra dekat unila ada wifi dan ac,0.8,0.9,0.9377230141490428,0.914856882358379,1.0
+hybrid,q01,kos putra dekat unila ada wifi dan ac,0.8,0.9,0.9311117444088913,0.914856882358379,1.0
+tfidf,q02,kos putri murah di gedong meneng,0.6,0.7,0.6885316959301556,0.6214011939609386,0.5
+bm25,q02,kos putri murah di gedong meneng,1.0,0.7,0.7911287831863341,0.7859162856301584,1.0
+indobert,q02,kos putri murah di gedong meneng,0.6,0.7,0.6839746696309397,0.7026305163854645,1.0
+hybrid,q02,kos putri murah di gedong meneng,0.8,0.7,0.7356451221105675,0.7670273914429264,1.0
+tfidf,q03,kos campur kamar mandi dalam parkir motor,1.0,1.0,1.0,1.0,1.0
+bm25,q03,kos campur kamar mandi dalam parkir motor,1.0,1.0,1.0,1.0,1.0
+indobert,q03,kos campur kamar mandi dalam parkir motor,1.0,1.0,1.0,1.0,1.0
+hybrid,q03,kos campur kamar mandi dalam parkir motor,1.0,1.0,1.0,1.0,1.0
+tfidf,q04,kos pasutri bulanan dapur bersama,0.8,0.4,0.8434782608695652,0.8687949224876582,1.0
+bm25,q04,kos pasutri bulanan dapur bersama,0.8,0.4,0.8454545454545455,0.8687949224876582,1.0
+indobert,q04,kos pasutri bulanan dapur bersama,0.2,0.3,0.3108381814264167,0.3847308995175917,0.3333333333333333
+hybrid,q04,kos pasutri bulanan dapur bersama,0.6,0.4,0.6166666666666666,0.7379846712541229,1.0
+tfidf,q05,kos muslim dekat masjid rajabasa,0.8,0.9,0.870809262327426,0.914856882358379,1.0
+bm25,q05,kos muslim dekat masjid rajabasa,1.0,1.0,1.0,1.0,1.0
+indobert,q05,kos muslim dekat masjid rajabasa,0.4,0.6,0.5547915173594521,0.5017100640839688,0.5
+hybrid,q05,kos muslim dekat masjid rajabasa,0.8,0.9,0.8566899093553505,0.914856882358379,1.0
+tfidf,q06,kos murah dibawah 500 ribu mahasiswa baru,0.4,0.5,0.43,0.6031171482531633,0.25
+bm25,q06,kos murah dibawah 500 ribu mahasiswa baru,0.4,0.5,0.4523809523809524,0.6337342724360074,0.3333333333333333
+indobert,q06,kos murah dibawah 500 ribu mahasiswa baru,0.4,0.5,0.48,0.6710350631449844,0.5
+hybrid,q06,kos murah dibawah 500 ribu mahasiswa baru,0.4,0.5,0.46571428571428564,0.6632771622033622,0.5
+tfidf,q07,kos eksklusif baru ac wifi kamar mandi dalam,1.0,1.0,1.0,1.0,1.0
+bm25,q07,kos eksklusif baru ac wifi kamar mandi dalam,1.0,1.0,1.0,1.0,1.0
+indobert,q07,kos eksklusif baru ac wifi kamar mandi dalam,1.0,1.0,1.0,1.0,1.0
+hybrid,q07,kos eksklusif baru ac wifi kamar mandi dalam,1.0,1.0,1.0,1.0,1.0
+tfidf,q08,kos tertutup ada jam malam aturan ketat,0.0,0.0,0.0,0.0,0.0
+bm25,q08,kos tertutup ada jam malam aturan ketat,0.0,0.0,0.0,0.0,0.0
+indobert,q08,kos tertutup ada jam malam aturan ketat,0.0,0.0,0.0,0.0,0.0
+hybrid,q08,kos tertutup ada jam malam aturan ketat,0.0,0.0,0.0,0.0,0.0
+tfidf,q09,kos buat kerja dari rumah wifi kencang tenang,0.0,0.0,0.0,0.0,0.0
+bm25,q09,kos buat kerja dari rumah wifi kencang tenang,0.0,0.0,0.0,0.0,0.0
+indobert,q09,kos buat kerja dari rumah wifi kencang tenang,0.0,0.0,0.0,0.0,0.0
+hybrid,q09,kos buat kerja dari rumah wifi kencang tenang,0.0,0.0,0.0,0.0,0.0
+tfidf,q10,kos dekat warung makan murah,0.0,0.1,0.1375180375180375,0.15642624200758548,0.14285714285714285
+bm25,q10,kos dekat warung makan murah,0.2,0.2,0.1931216931216931,0.34337431936037655,0.25
+indobert,q10,kos dekat warung makan murah,0.2,0.1,0.16666666666666666,0.20210734650054757,0.25
+hybrid,q10,kos dekat warung makan murah,0.0,0.1,0.13095238095238096,0.15642624200758548,0.14285714285714285
+tfidf,q11,kos tahunan setahun bayar di muka,0.0,0.0,0.0,0.0,0.0
+bm25,q11,kos tahunan setahun bayar di muka,0.0,0.0,0.0,0.0,0.0
+indobert,q11,kos tahunan setahun bayar di muka,0.0,0.0,0.0,0.0,0.0
+hybrid,q11,kos tahunan setahun bayar di muka,0.0,0.0,0.0,0.0,0.0
+tfidf,q12,kos sumantri brojonegoro depan kampus,0.0,0.0,0.0,0.0,0.0
+bm25,q12,kos sumantri brojonegoro depan kampus,0.0,0.0,0.0,0.0,0.0
+indobert,q12,kos sumantri brojonegoro depan kampus,0.0,0.0,0.0,0.0,0.0
+hybrid,q12,kos sumantri brojonegoro depan kampus,0.0,0.0,0.0,0.0,0.0
+tfidf,q13,kos dekat itera murah mahasiswa baru,0.0,0.1,0.10826330532212886,0.13565197343244778,0.1
+bm25,q13,kos dekat itera murah mahasiswa baru,0.0,0.0,0.0985797827903091,0.0,0.08333333333333333
+indobert,q13,kos dekat itera murah mahasiswa baru,0.2,0.1,0.40948275862068967,0.46927872602275644,1.0
+hybrid,q13,kos dekat itera murah mahasiswa baru,0.2,0.1,0.23571428571428568,0.2960819109658652,0.5
+tfidf,q14,kos darmajaya way halim putri ac,0.4,0.4,0.4522222222222222,0.5681000400692752,0.5
+bm25,q14,kos darmajaya way halim putri ac,0.4,0.5,0.45539682539682536,0.6132355269353261,0.25
+indobert,q14,kos darmajaya way halim putri ac,0.4,0.4,0.4014646464646464,0.5098757076393253,0.3333333333333333
+hybrid,q14,kos darmajaya way halim putri ac,0.4,0.4,0.42646464646464644,0.5236938779715556,0.3333333333333333
+tfidf,q15,kos dekat uin raden intan sukarame muslim,0.8,0.6,0.630220630386413,0.5708588662113935,0.5
+bm25,q15,kos dekat uin raden intan sukarame muslim,1.0,0.9,0.9445684657223119,0.9266360779006401,1.0
+indobert,q15,kos dekat uin raden intan sukarame muslim,0.4,0.4,0.4368744750913536,0.34695119186869644,0.3333333333333333
+hybrid,q15,kos dekat uin raden intan sukarame muslim,0.6,0.7,0.6326112747781469,0.6188656458779801,0.5
+tfidf,q16,kos teknokrat kedaton fasilitas lengkap,0.2,0.5,0.6641898518576307,0.49276192198755814,1.0
+bm25,q16,kos teknokrat kedaton fasilitas lengkap,1.0,0.9,0.8698278210080865,0.9305687780632227,1.0
+indobert,q16,kos teknokrat kedaton fasilitas lengkap,0.4,0.6,0.6567968640463783,0.6023277671368327,1.0
+hybrid,q16,kos teknokrat kedaton fasilitas lengkap,1.0,0.6,0.7645149924414388,0.7151857987862356,1.0
+tfidf,q17,kos politeknik negeri lampung putra murah,1.0,0.7,0.785607868752665,0.6489075176453224,1.0
+bm25,q17,kos politeknik negeri lampung putra murah,1.0,0.9,0.9013075660672913,0.7674662166126626,1.0
+indobert,q17,kos politeknik negeri lampung putra murah,0.6,0.5,0.5863800066717839,0.4908443131216941,1.0
+hybrid,q17,kos politeknik negeri lampung putra murah,1.0,0.7,0.7571888923562352,0.6383180417225416,1.0
+tfidf,q18,kos universitas bandar lampung ubl dekat kampus,0.0,0.0,0.0,0.0,0.0
+bm25,q18,kos universitas bandar lampung ubl dekat kampus,0.0,0.0,0.0,0.0,0.0
+indobert,q18,kos universitas bandar lampung ubl dekat kampus,0.0,0.0,0.0,0.0,0.0
+hybrid,q18,kos universitas bandar lampung ubl dekat kampus,0.0,0.0,0.0,0.0,0.0

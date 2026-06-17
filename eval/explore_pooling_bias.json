@@ -1,0 +1,30 @@
+{
+  "avg_pool_size": 38.1,
+  "per_model": {
+    "bm25": {
+      "map_bm25pool": 0.2958,
+      "map_unionpool": 0.2365,
+      "delta": -0.0593
+    },
+    "tfidf": {
+      "map_bm25pool": 0.2532,
+      "map_unionpool": 0.2288,
+      "delta": -0.0244
+    },
+    "neural": {
+      "map_bm25pool": 0.0437,
+      "map_unionpool": 0.1072,
+      "delta": 0.0635
+    },
+    "hybrid": {
+      "map_bm25pool": 0.2846,
+      "map_unionpool": 0.2301,
+      "delta": -0.0545
+    },
+    "smart": {
+      "map_bm25pool": 0.3594,
+      "map_unionpool": 0.4311,
+      "delta": 0.0717
+    }
+  }
+}
