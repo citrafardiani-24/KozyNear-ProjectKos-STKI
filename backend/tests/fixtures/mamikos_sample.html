@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>PLACEHOLDER Mamikos Listing Page</title>
+</head>
+<body>
+<!--
+  PLACEHOLDER fixture untuk test scraper parser.
+
+  TIM LEAD/SCRAPER (Anggota A) — replace file ini dengan real HTML snapshot:
+
+  1. Buka https://mamikos.com/kost/kost-ac-lampung-murah di Chrome
+  2. Ctrl+U (View Page Source)
+  3. Ctrl+A, Ctrl+C (Select All, Copy)
+  4. Paste overwrite ke file ini
+  5. git add backend/tests/fixtures/mamikos_sample.html
+  6. git commit -m "chore: add real mamikos sample fixture for parser test"
+
+  Setelah fixture real, tambah integration test di test_scraper.py:
+
+      def test_mamikos_parse_listing_urls_from_fixture():
+          fixture_path = Path(__file__).parent / "fixtures" / "mamikos_sample.html"
+          html = fixture_path.read_text(encoding="utf-8")
+          scraper = MamikosScraper()
+          urls = scraper.parse_listing_urls(html, "https://mamikos.com/...")
+          assert len(urls) > 0
+-->
+
+<div id="__next">
+  <main>
+    <h1>Kost AC Lampung Murah - Tersedia 82 Kost</h1>
+    <div class="listing-grid">
+      <a href="/room/sample-kos-putra-12345" class="kos-card">
+        <h3>Sample Kos Putra Gedong Meneng</h3>
+        <p>Rp 850.000 / bulan</p>
+      </a>
+      <a href="/room/sample-kos-putri-67890" class="kos-card">
+        <h3>Sample Kos Putri Rajabasa</h3>
+        <p>Rp 500.000 / bulan</p>
+      </a>
+    </div>
+  </main>
+</div>
+
+<script id="__NEXT_DATA__" type="application/json">
+{"props":{"pageProps":{"rooms":[{"id":"12345","slug":"sample-kos-putra-12345","name":"Sample Kos Putra"}]}}}
+</script>
+</body>
+</html>
