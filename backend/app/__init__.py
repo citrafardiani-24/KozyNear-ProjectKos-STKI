@@ -1,0 +1,1 @@
+"""TKI-KOS application package."""
