@@ -1,0 +1,727 @@
+:root {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #fafafa;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 0 1.25rem;
+}
+
+/* =============================================================================
+   Header
+============================================================================= */
+.app-header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 2rem;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  margin: 0 0 1.5rem;
+  color: #555;
+}
+
+/* =============================================================================
+   Search form
+============================================================================= */
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0 0 1.5rem;
+  flex-wrap: wrap;
+}
+
+.search-form input[type="text"] {
+  flex: 1 1 320px;
+  padding: 0.65rem 1rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: white;
+}
+
+.search-form input[type="text"]:focus {
+  outline: 2px solid #2563eb;
+  outline-offset: 1px;
+  border-color: transparent;
+}
+
+.search-form select,
+.search-form button {
+  padding: 0.65rem 1rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+
+.search-form button {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+  font-weight: 500;
+  min-width: 110px;
+}
+
+.search-form button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.search-form button:hover:not(:disabled) {
+  background: #1d4ed8;
+}
+
+/* =============================================================================
+   Layout: sidebar (filter) + main (results)
+============================================================================= */
+.layout {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+
+@media (max-width: 720px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =============================================================================
+   Filter panel
+============================================================================= */
+.filter-panel {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 1rem;
+  position: sticky;
+  top: 1rem;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.filter-header h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.filter-reset {
+  background: none;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: #555;
+}
+
+/* =============================================================================
+   Smart: understood chips + Google Maps link
+============================================================================= */
+.understood {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin: 0.5rem 0 0.75rem;
+  font-size: 0.85rem;
+}
+
+.understood-label {
+  color: #666;
+}
+
+.chip {
+  background: #eef2ff;
+  color: #3730a3;
+  border-radius: 999px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.8rem;
+}
+
+.relaxed-note {
+  color: #b45309;
+  font-style: italic;
+}
+
+.maps-link {
+  margin-left: 0.75rem;
+  color: #2563eb;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.maps-link:hover {
+  text-decoration: underline;
+}
+
+.filter-reset:hover {
+  background: #f3f4f6;
+}
+
+.filter-group {
+  margin-bottom: 0.85rem;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.3rem;
+}
+
+.filter-group select,
+.filter-group input {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: white;
+}
+
+.filter-range {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.filter-range input {
+  flex: 1;
+}
+
+.filter-range span {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* =============================================================================
+   Results
+============================================================================= */
+.results-main {
+  min-width: 0;
+}
+
+.meta {
+  color: #666;
+  font-size: 0.875rem;
+  margin: 0 0 1rem;
+}
+
+.meta code {
+  background: #eee;
+  padding: 0.1rem 0.4rem;
+  border-radius: 4px;
+}
+
+.error {
+  background: #fef2f2;
+  color: #b91c1c;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  margin: 0 0 1rem;
+  border: 1px solid #fecaca;
+}
+
+.error-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.error-toggle {
+  background: none;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.error-toggle:hover {
+  background: #fee2e2;
+}
+
+.error-debug {
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed #fecaca;
+}
+
+.debug-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  align-items: center;
+}
+
+.debug-copy {
+  background: #1f2937;
+  color: white;
+  border: none;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.78rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.debug-copy:hover {
+  background: #374151;
+}
+
+.debug-link {
+  color: #1f2937;
+  font-size: 0.78rem;
+  text-decoration: underline;
+}
+
+.debug-pre {
+  background: #1f2937;
+  color: #e5e7eb;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  overflow-x: auto;
+  white-space: pre;
+  max-height: 400px;
+  overflow-y: auto;
+  margin: 0;
+}
+
+.footer-link {
+  color: #888;
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 0.75rem;
+}
+
+.footer-link:hover {
+  color: #2563eb;
+}
+
+.empty {
+  color: #888;
+  text-align: center;
+  margin: 3rem 0;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* =============================================================================
+   Result card
+============================================================================= */
+.result-card {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 1.1rem 1.25rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: box-shadow 0.15s ease;
+}
+
+.result-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.result-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+}
+
+.result-title {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.35;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  flex-shrink: 0;
+  text-transform: capitalize;
+}
+
+.badge-putra {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.badge-putri {
+  background: #fce7f3;
+  color: #be185d;
+}
+
+.badge-campur {
+  background: #ede9fe;
+  color: #6d28d9;
+}
+
+.price {
+  margin: 0 0 0.25rem;
+  color: #047857;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.price-unit {
+  font-weight: 400;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.address {
+  margin: 0 0 0.5rem;
+  color: #555;
+  font-size: 0.88rem;
+}
+
+.facilities {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.facilities li {
+  padding: 0.15rem 0.55rem;
+  background: #f3f4f6;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  color: #4b5563;
+}
+
+.facility-more {
+  background: transparent !important;
+  color: #6b7280 !important;
+  font-style: italic;
+}
+
+.description {
+  margin: 0 0 0.5rem;
+  color: #333;
+  font-size: 0.92rem;
+  line-height: 1.55;
+}
+
+.result-card-footer {
+  border-top: 1px solid #f3f4f6;
+  padding-top: 0.45rem;
+}
+
+.score {
+  font-size: 0.74rem;
+  color: #999;
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+}
+
+/* =============================================================================
+   Tabs (Pencarian / Evaluasi / Preprocessing / Statistik)
+============================================================================= */
+.tabs {
+  display: flex;
+  gap: 0.4rem;
+  margin: 0 0 1.5rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 0.6rem;
+}
+
+.tab-btn {
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.92rem;
+  cursor: pointer;
+  color: #555;
+  font-weight: 500;
+}
+
+.tab-btn:hover {
+  background: #f3f4f6;
+}
+
+.tab-btn.active {
+  background: #eef2ff;
+  color: #2563eb;
+  border-color: #c7d2fe;
+  font-weight: 600;
+}
+
+/* =============================================================================
+   Eval tab
+============================================================================= */
+.eval-block {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin: 0 0 1.25rem;
+}
+
+.eval-block h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+}
+
+.eval-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.eval-table th,
+.eval-table td {
+  text-align: left;
+  padding: 0.45rem 0.6rem;
+  border-bottom: 1px solid #f3f4f6;
+}
+
+.eval-table th {
+  color: #666;
+  font-weight: 600;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.eval-table .best-row {
+  background: #f0fdf4;
+  font-weight: 600;
+}
+
+.eval-note {
+  color: #777;
+  font-size: 0.84rem;
+  line-height: 1.6;
+}
+
+/* =============================================================================
+   Preprocessing tab
+============================================================================= */
+.stage-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.stage-card {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+
+.stage-card.stage-raw {
+  border-color: #c7d2fe;
+  background: #eef2ff;
+}
+
+.stage-card.stage-final {
+  border-color: #86efac;
+  background: #f0fdf4;
+}
+
+.stage-name {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.3rem;
+}
+
+.stage-output {
+  font-size: 0.92rem;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.stage-empty {
+  color: #999;
+}
+
+.stage-prices {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #047857;
+  font-weight: 500;
+}
+
+.token-list {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+/* =============================================================================
+   Stats tab
+============================================================================= */
+.stat-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 0.75rem;
+  margin: 0 0 1.25rem;
+}
+
+.stat-card {
+  background: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+.bar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.bar-row {
+  display: grid;
+  grid-template-columns: 160px 1fr 40px;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.84rem;
+}
+
+.bar-label {
+  color: #444;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bar-track {
+  background: #f3f4f6;
+  border-radius: 999px;
+  height: 10px;
+  overflow: hidden;
+}
+
+.bar-fill {
+  background: #2563eb;
+  height: 100%;
+  border-radius: 999px;
+}
+
+.bar-count {
+  color: #666;
+  text-align: right;
+}
+
+/* =============================================================================
+   Intro panel + contoh query (untuk demo)
+============================================================================= */
+.tab-intro {
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 10px;
+  padding: 0.85rem 1.1rem;
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #1e3a5f;
+}
+
+.tab-intro strong {
+  color: #1d4ed8;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 1rem;
+}
+
+.example-chip {
+  background: white;
+  border: 1px solid #c7d2fe;
+  color: #3730a3;
+  border-radius: 999px;
+  padding: 0.4rem 0.85rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.example-chip:hover {
+  background: #4f46e5;
+  color: white;
+  border-color: #4f46e5;
+}
+
+/* =============================================================================
+   Notebook tab
+============================================================================= */
+.notebook-frame {
+  width: 100%;
+  height: 78vh;
+  border: 1px solid #e5e5e5;
+  border-radius: 10px;
+  background: white;
+}
+
+/* =============================================================================
+   Footer
+============================================================================= */
+.footer {
+  margin: 3rem 0 1.5rem;
+  text-align: center;
+  color: #888;
+}
