@@ -1,0 +1,13 @@
+[
+  {"name": "universitas lampung", "lat": -5.3645, "lng": 105.2434, "aliases": ["unila", "unyila", "unl", "fmipa", "ft unila", "fkip", "feb unila"], "source": "wikipedia-id 2026-06-10"},
+  {"name": "itera", "lat": -5.3668, "lng": 105.3149, "aliases": ["institut teknologi sumatera"], "source": "nominatim-osm 2026-06-10"},
+  {"name": "uin raden intan", "lat": -5.3808, "lng": 105.3038, "aliases": ["uin", "raden intan"], "source": "nominatim-osm 2026-06-10"},
+  {"name": "politeknik negeri lampung", "lat": -5.3584, "lng": 105.2329, "aliases": ["polinela"], "source": "wikipedia-id 2026-06-10"},
+  {"name": "universitas teknokrat indonesia", "lat": -5.3824, "lng": 105.2578, "aliases": ["teknokrat"], "source": "wikipedia-id 2026-06-10"},
+  {"name": "ibi darmajaya", "lat": -5.3772, "lng": 105.2498, "aliases": ["darmajaya"], "source": "nominatim-osm 2026-06-10"},
+  {"name": "universitas bandar lampung", "lat": -5.3796, "lng": 105.2518, "aliases": ["ubl"], "source": "nominatim-osm 2026-06-10"},
+  {"name": "universitas malahayati", "lat": -5.3815, "lng": 105.2187, "aliases": ["malahayati", "unmal"], "source": "wikipedia-id 2026-06-10"},
+  {"name": "mall boemi kedaton", "lat": -5.3821, "lng": 105.2596, "aliases": ["mbk", "mall bumi kedaton", "mal boemi kedaton"], "source": "nominatim-osm 2026-06-10"},
+  {"name": "transmart lampung", "lat": -5.3830, "lng": 105.2819, "aliases": ["transmart", "transmart way halim"], "source": "nominatim-osm 2026-06-10"},
+  {"name": "stasiun tanjungkarang", "lat": -5.4050, "lng": 105.2572, "aliases": ["stasiun tanjung karang", "stasiun"], "source": "wikipedia-id 2026-06-10"}
+]
