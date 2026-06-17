@@ -1,0 +1,37 @@
+# Jalankan pytest backend tiap push/PR yang menyentuh backend atau data.
+# Sebelumnya CI TIDAK pernah menjalankan test: push yang merusak suite tetap
+# ter-deploy mulus. Deps neural (fastembed/faiss) sengaja tidak di-install,
+# test neural auto-skip (guard importorskip di test_indexing).
+# Repo private: job ~3-4 menit per push, masih aman di kuota 2000 menit/bln
+# bersama keepalive (~1800) karena push tidak tiap hari... pantau di Settings
+# -> Billing kalau ragu.
+name: test
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "backend/**"
+      - "data/**"
+      - "eval/**"
+      - ".github/workflows/test.yml"
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: backend/requirements-runtime.txt
+      - name: Install deps runtime + test
+        run: |
+          pip install -q -r backend/requirements-runtime.txt pytest pytest-asyncio httpx
+      - name: Run pytest
+        working-directory: backend
+        run: python -m pytest tests -q

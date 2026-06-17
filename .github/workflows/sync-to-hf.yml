@@ -1,0 +1,53 @@
+# Mirror otomatis GitHub -> HuggingFace Space tiap push ke main.
+# Butuh secret HF_TOKEN (tipe Write) di GitHub repo:
+#   Settings -> Secrets and variables -> Actions -> HF_TOKEN
+# Tanpa secret, job skip dengan pesan (tidak gagal).
+#
+# Metode: API resmi huggingface_hub upload_folder, BUKAN git push.
+# Alasan: pre-receive hook HF menolak (1) git history yang mengandung file
+# besar lama (LAPORAN.pdf), dan (2) file ekstensi binary (.pkl/.npy/.index)
+# yang tidak disimpan via LFS, berapa pun ukurannya. upload_folder otomatis
+# merutekan binary ke LFS di sisi server, tanpa mengubah repo GitHub.
+name: sync-to-hf
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Upload ke HF Space (auto-LFS untuk binary)
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          if [ -z "$HF_TOKEN" ]; then
+            echo "HF_TOKEN belum di-set di GitHub repo secrets — mirror di-skip."
+            exit 0
+          fi
+          pip install -q huggingface_hub
+          python - <<'EOF'
+          import os
+          from huggingface_hub import HfApi
+
+          api = HfApi(token=os.environ["HF_TOKEN"])
+          api.upload_folder(
+              folder_path=".",
+              repo_id="DYmazeh/kozynear",
+              repo_type="space",
+              commit_message=f"deploy: {os.environ.get('GITHUB_SHA', 'manual')[:12]}",
+              ignore_patterns=[
+                  ".git/*", ".github/*", "backend/.venv/*",
+                  "frontend/node_modules/*", "frontend/dist/*",
+                  "**/__pycache__/*", ".pytest_cache/*",
+              ],
+          )
+          print("Mirror sukses: https://huggingface.co/spaces/DYmazeh/kozynear")
+          print("Tab App akan mulai Building (~15-20 menit build pertama).")
+          EOF

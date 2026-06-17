@@ -1,0 +1,27 @@
+# Keepalive ping: cegah cold start saat demo.
+# - Render free spin down setelah 15 menit idle; HF Spaces sleep 48 jam idle.
+# - Jadwal: tiap 15 menit, HANYA 00-15 UTC (= 07:00-22:59 WIB, jam aktif).
+#   Repo ini PRIVATE: kuota GitHub Actions free 2000 menit/bulan dan tiap
+#   run dibulatkan ke 1 menit -> cron 24/7 tiap 12 menit (~3600 menit/bln)
+#   bakal menghabiskan kuota. Jadwal ini ~1800 menit/bln, muat.
+#   Alternatif tanpa kuota: jadikan repo public, atau pakai cron-job.org.
+# - Budget Render free 750 jam instance/bln; spin down malam hari justru
+#   menghemat. Matikan workflow (Actions tab -> disable) setelah penilaian.
+# Catatan: schedule GitHub bisa telat beberapa menit (best effort).
+name: keepalive
+
+on:
+  schedule:
+    - cron: "*/15 0-15 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Render
+        run: curl -fsS -m 30 https://kozynear.onrender.com/health || echo "render tidak respons (mungkin cold start)"
+      - name: Ping HuggingFace Space
+        run: curl -fsS -m 60 https://dymazeh-kozynear.hf.space/health || echo "hf space tidak respons (belum dibuat / sleeping)"
+      - name: Ping HF /api/stats (sentuh DB Supabase, cegah pause 7 hari idle)
+        run: curl -fsS -m 60 https://dymazeh-kozynear.hf.space/api/stats -o /dev/null || echo "stats tidak respons"

@@ -1,0 +1,43 @@
+# Hindari bloat build context (yang Docker daemon kirim ke builder)
+
+# Python
+**/__pycache__
+**/*.pyc
+**/*.pyo
+**/.venv
+**/venv
+**/.pytest_cache
+**/.coverage
+**/htmlcov
+**/coverage.xml
+
+# Node
+**/node_modules
+**/dist
+**/.vite
+
+# Env files (NEVER ship)
+**/.env
+**/.env.local
+
+# Git
+.git
+.gitignore
+**/.gitkeep
+
+# IDE / OS
+**/.vscode
+**/.idea
+**/*.swp
+**/.DS_Store
+**/Thumbs.db
+
+# Dev artifacts
+**/.scrape_cache
+**/notebooks/.ipynb_checkpoints
+**/*.log
+
+# Tests + docs (gak perlu di runtime image)
+docs/
+.github/
+**/tests
